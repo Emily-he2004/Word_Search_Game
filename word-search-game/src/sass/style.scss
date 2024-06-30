@@ -11,23 +11,28 @@
 table {
   border-collapse: collapse;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 td {
-  width: 30px;
-  height: 30px;
-  border: 1px solid black;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #fff;
   cursor: pointer;
   text-align: center;
 }
 
 td:hover {
-  background-color: #c9c9c9;
+  background-color: #fff;
   color: black;
 }
 
 .found-word {
   background-color: rgb(2, 163, 163);
+}
+
+.unfound-word {
+  background-color: rgb(174, 41, 41);
 }
 
 .gameboard {
@@ -40,9 +45,51 @@ td:hover {
       display: flex;
       justify-content: space-between;
     }
+
+    .give-up-msg {
+      text-align: right;
+      font-size: 0.9rem;
+    }
   }
 
-  .search-info{
-    margin: 1rem 3rem;
+  .search-info {
+    margin: 0.5rem 3rem auto 3rem;
+    text-align: center;
+
+    ul,
+    li {
+      list-style-type: none;
+      padding: .1rem 0;
+      text-transform: uppercase;
+    }
+
+    .word-bank {
+      margin-bottom: 4rem;
+      border: 0.1rem white solid;
+      padding: 0 2rem 1rem 2rem;
+      border-radius: 1rem;
+      min-height: 10rem;
+
+      .found-word-bank {
+        text-decoration: line-through;
+        font-style: italic;
+      }
+    }
+
+    .found-words {
+      margin-bottom: 4rem;
+      border: 0.1rem white;
+      padding: 0.01rem 2rem 1rem 2rem;
+      border-radius: 1rem;
+      background-color: #ffffff79;
+      min-height: 10rem;
+    }
   }
 }
+
+// to do: design and style congradulations
+// hide & disable give up btn
+//  change/update Reset game button
+// to "Play Again?" and center that
+//  Bonus: add new message under "Play Again"
+// "That was passable. Let's see if that was just beginner's luck."
