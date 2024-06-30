@@ -200,7 +200,7 @@ function WordSearch() {
         grid,
         wordIndex
       );
-  
+
       if (direction !== null) {
         const newSelectedCells = { ...selectedCells };
         for (let i = startIndex; i <= endIndex; i++) {
@@ -214,7 +214,7 @@ function WordSearch() {
         }
       }
     }
-  };  
+  };
 
   const getDirection = (row, col, startIndex, endIndex, grid, wordIndex) => {
     const directions = [

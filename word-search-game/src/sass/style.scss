@@ -29,10 +29,12 @@ td:hover {
 
 .found-word {
   background-color: rgb(2, 163, 163);
+  visibility: visible;
 }
 
 .unfound-word {
   background-color: rgb(174, 41, 41);
+//   visibility: hidden;
 }
 
 .gameboard {

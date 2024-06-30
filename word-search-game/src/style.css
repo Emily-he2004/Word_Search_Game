@@ -29,6 +29,7 @@ td:hover {
 
 .found-word {
   background-color: rgb(2, 163, 163);
+  visibility: visible;
 }
 
 .unfound-word {
