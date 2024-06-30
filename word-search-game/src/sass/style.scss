@@ -1,0 +1,48 @@
+.word-search {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+
+td:hover {
+  background-color: #c9c9c9;
+  color: black;
+}
+
+.found-word {
+  background-color: rgb(2, 163, 163);
+}
+
+.gameboard {
+  display: flex;
+
+  .search-box {
+    margin: 1rem 3rem;
+
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .search-info{
+    margin: 1rem 3rem;
+  }
+}
