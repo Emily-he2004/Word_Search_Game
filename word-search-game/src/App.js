@@ -293,13 +293,8 @@ function WordSearch() {
           </table>
           <div className="action-buttons">
             <button onClick={resetGame}>Reset Game</button>
-            <div>
-              <button onClick={handleGiveUp}>Give up?</button>
-            </div>
+            <button>Enter Word</button>
           </div>
-          <p className="give-up-msg">
-            <em>Get ready to see what you missed.</em>
-          </p>
         </div>
         <div className="search-info">
           <div className="word-bank">
@@ -322,6 +317,12 @@ function WordSearch() {
                 <li key={word}>{word}</li>
               ))}
             </ul>
+          </div>
+          <div className="give-up">
+            <button onClick={handleGiveUp}>Give up?</button>
+            <p className="give-up-msg">
+              <em>Get ready to see what you missed.</em>
+            </p>
           </div>
         </div>
       </div>

@@ -22,7 +22,8 @@ td {
   text-align: center;
 }
 
-td:hover {
+td:hover,
+td.selected-cell {
   background-color: #fff;
   color: black;
 }
@@ -34,14 +35,14 @@ td:hover {
 
 .unfound-word {
   background-color: rgb(174, 41, 41);
-//   visibility: hidden;
+  //   visibility: hidden;
 }
 
 .gameboard {
   display: flex;
 
   .search-box {
-    margin: 1rem 3rem;
+    margin: 0.5rem 1rem auto 3rem;
 
     .action-buttons {
       display: flex;
@@ -61,12 +62,12 @@ td:hover {
     ul,
     li {
       list-style-type: none;
-      padding: .1rem 0;
+      padding: 0.1rem 0;
       text-transform: uppercase;
     }
 
     .word-bank {
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
       border: 0.1rem white solid;
       padding: 0 2rem 1rem 2rem;
       border-radius: 1rem;
@@ -79,12 +80,16 @@ td:hover {
     }
 
     .found-words {
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
       border: 0.1rem white;
       padding: 0.01rem 2rem 1rem 2rem;
       border-radius: 1rem;
-      background-color: #ffffff79;
+      background-color: #ffffff3c;
       min-height: 10rem;
+    }
+
+    .give-up {
+      text-align: right;
     }
   }
 }
